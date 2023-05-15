@@ -13,5 +13,4 @@ URL: https://pypi.org/project/trphysx/
 We present a new hybrid ML method, codenamed FLUID-GPT: Fast Learning to Understand and Investigate Dynamics with a Generative Pre-Trained Transformer. 
 FLUID-GPT utilizes a Generative Pre-Trained Transformer 2 (GPT-2) with a 3D CNN to predict particle trajectories and erosion in an industrial-scale boiler header. 
 GPT-2 was initially developed for natural language processing/translation, which has garnered recent widespread attention for its use with interactive Artificial Intelligence (AI) chatbots or forecasting models for time series data. 
-The transformer model in GPT-2 employs an encoder-decoder architecture where the encoder extracts features from an input sequence, and the decoder generates an output sequence utilizing these features with another set of input sequences.
 In this work, we utilized our FLUID-GPT ML approach to predict particle trajectories based on five initial parameters (particle size, main-inlet speed, main-inlet pressure, sub-inlet speed, and sub-inlet pressure) followed by erosion predictions based on the GPT-2-learned trajectories. 
