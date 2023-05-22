@@ -27,4 +27,8 @@ In this work, we utilized our FLUID-GPT ML approach to predict particle trajecto
 3. GPT-2_SDY159.py
     GPT-2 model architecture (includes visualiation of trajectory)
  
-5. 
+4. GPT_to_CNN_write_hdf5_consistent_kfold.py
+    The predicted trajectory from GPT-2 model will be saved in the same K-fold cross validation as "CFD_write_hdf5_consistent_kfold.py" file.
+    
+5. LSTM_to_CNN_write_hdf5_consistent_kfold.py
+    The predicted trajectory from LSTM/BiLSTM model will be saved in the same K-fold cross validation as "CFD_write_hdf5_consistent_kfold.py" file.
