@@ -1,0 +1,17 @@
+pandas
+numpy
+h5py
+torch
+torchmetrics
+logging
+sklearn
+typing
+math
+random
+gc
+seaborn
+matplotlib
+dill 
+json
+
+#-e .
