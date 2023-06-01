@@ -1,0 +1,55 @@
+#Generalization 
+config = {
+    "model": {
+        "n_embd": 1568,
+        "n_layer": AAAAA,
+        "n_head": BBBBB,
+        "activation_function": gelu,
+        "dropout": 0.0,
+        "seed": 12345,
+        "path": "your path",
+        "path_result": "your path",
+    },
+    "training": {
+        "device": "cuda", # "cuda" or "cpu"
+        "batch_size": FFFFF,
+        "training_h5_file": "your path.hdf5",
+        "n_ctx": CCCCC,
+        "resid_pdrop": 0.0,
+        "embd_pdrop": 0.0,
+        "attn_pdrop": 0.0,
+        "layer_norm_epsilon": 1e-05,
+        "initializer_range": 0.01,
+        "stride": DDDDD,
+        "ndata": 2500,  #2500
+        "num_epoch": 100, #100
+        "learning_rate": LLLLL,
+        "max_lr": MMMMM,
+        #"T_0_for_cosine_annealing": EEEEE,
+        #"T_mult_for_cosine_annealing": GGGGG,
+        #"scheduler_step_size": 100,
+        "output_hidden_state": False,
+        "output_attention": False,
+        "use_cache": True,
+        "max_length": 50,
+        "min_length": 0,
+        "gradient_accumulation_steps": 1,
+        "max_grad_norm": 0.01,
+        "Job_number": KKKKK,
+        "MSE_threshold": 0.0065,
+        "es_counter": 3
+    },
+    "validating": {
+        "validating_h5_file": "your path.hdf5",
+        "batch_size": FFFFF,
+        "block_size": 50,
+        "stride": 3000,
+        "val_steps":1
+    },
+    "testing": {
+        "testing_h5_file": "your path.hdf5",
+        "batch_size": FFFFF,
+        "stride": 3000,
+        "block_size": 50,
+    }
+}

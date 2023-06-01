@@ -1262,17 +1262,17 @@ early_stopping = EarlyStopping(mse_threshold=config["training"]["MSE_threshold"]
 
 #Loading training, validation, and test sets
 training_data = DatasetReader(
-      config["training"]["training_h5_file"], 
-      block_size=config["training"]["n_ctx"], 
-      stride=config["training"]["stride"],
-      )
+    config["training"]["training_h5_file"], 
+    block_size=config["training"]["n_ctx"], 
+    stride=config["training"]["stride"],
+    )
 
 validating_data = DatasetReader(
-      config["validating"]["validating_h5_file"], 
-      block_size=config["validating"]["block_size"], 
-      stride=config["validating"]["stride"],
-      eval = True,
-      )
+    config["validating"]["validating_h5_file"], 
+    block_size=config["validating"]["block_size"], 
+    stride=config["validating"]["stride"],
+    eval = True,
+    )
 
 training_loader = DataLoader(
     training_data,
@@ -1291,11 +1291,11 @@ validating_loader = DataLoader(
 )
 
 testing_data = DatasetReader(
-      config["testing"]["testing_h5_file"], 
-      block_size=config["testing"]["block_size"], 
-      stride=config["testing"]["stride"],
-      eval = True,
-      )
+    config["testing"]["testing_h5_file"], 
+    block_size=config["testing"]["block_size"], 
+    stride=config["testing"]["stride"],
+    eval = True,
+    )
 
 testing_loader = DataLoader(
     testing_data,
