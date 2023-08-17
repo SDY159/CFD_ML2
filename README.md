@@ -21,7 +21,7 @@ In this work, we utilized our FLUID-GPT ML approach to predict particle trajecto
 1. CFD_write_hdf5_consistent_kfold.py
     It loads CFD data (Particle trajectories, 5 initial patameters, and erosion) and make them as hdf5 dataset with the K-fold cross validation. 
 
-2. CNN_SDY159.py
+2. CNN_batch_SDY159.py
     CNN model architecture (includes visualiation of erosion)
     
 3. GPT-2_SDY159.py
